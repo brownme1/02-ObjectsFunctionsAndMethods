@@ -24,7 +24,7 @@ def main():
     x = 3
     y = 4
     print(hypotenuse(x,y))
-    print(moving('red',1))
+    print(moving('red',3))
 
 def hypotenuse(x,y):
     return (math.sqrt(x**2+y**2))
