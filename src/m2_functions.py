@@ -73,7 +73,26 @@ def hypotenuse(x,y):
 #
 #   You may name the function and its parameters whatever you wish.
 #
-# TODO: 4b.  In main, CALL your function at least TWICE (with different values
+
+import rosegraphics as rg
+window = rg.TurtleWindow()
+
+def main():
+    pets()
+    moving()
+
+def pets():
+
+    thickness = 3
+    color = 'blue'
+    cat = rg.SimpleTurtle()
+    cat.pen = rg.Pen('green',thickness)
+    dog = rg.SimpleTurtle()
+    dog.pen =rg.Pen(color,5)
+    cat.forward(100)
+    dog.backward(100)
+
+# DONe: 4b.  In main, CALL your function at least TWICE (with different values
 #   for the arguments) to test whether you defined the function correctly.
 #
 ###############################################################################
